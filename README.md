@@ -24,3 +24,5 @@ sudo -u postgres psql -d Gyokeres_Stats -f tables.sql
 # RESULT 2:1 OR 1:2?
 
 THE OPPONENT HAS ALWAYS THE SECOND MEMBER OF RESULT!
+
+Driver={PostgreSQL ANSI(x64)}; Server=localhost; Port=5432; Database= Gyokeres_Stats
