@@ -16,8 +16,11 @@ sudo -u postgres psql
 # To run script outside psql
 
 sudo -u postgres psql -d Gyokeres_Stats -f tables.sql
+sudo -u postgres psql -d Gyokeres_Stats -f insert_data.sql
 
+# If you need to restart and clean all tables
 
+sudo -u postgres psql -d Gyokeres_Stats -f delete_all_tables.sql
 
 ## NOTES 
 
@@ -25,4 +28,4 @@ sudo -u postgres psql -d Gyokeres_Stats -f tables.sql
 
 THE OPPONENT HAS ALWAYS THE SECOND MEMBER OF RESULT!
 
-Driver={PostgreSQL ANSI(x64)}; Server=localhost; Port=5432; Database= Gyokeres_Stats
+On Power BI if you need to connect a PostgreSQL database use ODBC with credentials - Driver={PostgreSQL ANSI(x64)}; Server=localhost; Port=5432; Database= Gyokeres_Stats
